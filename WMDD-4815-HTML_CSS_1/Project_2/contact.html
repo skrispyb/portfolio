@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Magazine - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/eab391ba4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrapper">
+            <a href="home.html"><img class="main_logo" src="assets/images/logo.svg" alt="Logo"></a>
+            <nav>
+                <button id="hamburger" aria-label="hamburger menu"><i class="fas fa-bars"></i></button>
+                <ul id="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="article.html">Article</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+            <button class="subscribe" onclick="scrollToSub()">Subscribe to newsletter!</button>
+            <form>
+                <label for="search" class="visually-hidden">search</label>
+                <input id="search" placeholder="search query">
+                <button><i class="fas fa-search" aria-hidden="true"></i><span class="visually-hidden">submit search
+                        query</span></button>
+            </form>
+        </div>
+    </header>
+
+    <main class="contact_page">
+        
+        <h1>Contact Us</h1>
+        
+        <div class="form_wrapper">
+        
+            <h3>We will get back to you as soon as we can!</h3>
+        
+            <form action="https://formspree.io/f/mnqobvrw" method="POST">
+                <div class="contact_name">
+                    <label for="name">
+                        Your name:
+                    </label>
+                    <input type="text" id="name" name="_replyto" required>
+                </div>
+                <div class="contact_email">
+                    <label for="email">
+                        Your email:
+                    </label>
+                    <input type="text" id="email" name="_replyto" required>
+                </div>
+                <div class="contact_message">
+                    <label for="message">
+                        Your message:
+                    </label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        
+        </div>
+    
+    </main>
+
+    <footer>
+        <div class="footer_wrapper">
+        
+            <form>
+                <label for="sub" class="visually-hidden">subscribe</label>
+                <input id="sub" placeholder="your email">
+                <button>Subscribe to newsletter</button>
+            </form>
+        
+            <div class="footer_logo_social">
+        
+                <a href="home.html"><img class="footer_logo" src="assets/images/logo.svg" alt="Logo"></a>
+        
+                <ul class="social">
+                    <li><a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-square"
+                                aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
+                    <li><a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram-square"
+                                aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
+                    <li><a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"
+                                aria-hidden="true"></i>&nbsp;&nbsp;</a></li>
+                </ul>
+        
+            </div>
+         
+            <div class="footer_content">
+                <ul>
+                    <li class="footer_content_heading">
+                        <h3>Information</h3>
+                    </li>
+                    <li><a href="mailto:info@langara.ca" aria-label="Email"><i class="fas fa-envelope"
+                                aria-hidden="true"></i> info@langara.ca</a></li>
+                    <li><a href="tel:+16043235511" aria-label="Phone"><i class="fas fa-phone-square-alt"
+                                aria-hidden="true"></i> +1 604 323 5511</a></li>
+                    <li><a href="https://goo.gl/maps/vAyZvZKmJq7x25zs8" aria-label="Location"><i
+                                class="fas fa-map-marker-alt" aria-hidden="true"></i> 100 W 49th
+                            Ave, Vancouver, BC V5Y 2Z6</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_content_heading">
+                        <h3>Links</h3>
+                    </li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Newsletter</li>
+                </ul>
+            </div>
+        
+        </div>
+    </footer>
+    
+    <div class="copyright">© 2020 Sumeet Kumar.</div>
+
+</body>
+
+</html>

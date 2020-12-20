@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>a6</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/eab391ba4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrapper">
+      <h1>
+        A6: Guitar Tabs
+      </h1>
+      <form>
+        <label for="search" class="visually-hidden">search</label>
+        <input id="search" placeholder="search query">
+        <button><i class="fas fa-search" aria-hidden="true"></i><span class="visually-hidden">submit search
+            query</span></button>
+      </form>
+    </div>
+
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <h2>
+        Introduction
+      </h2>
+
+      <p>
+        This site acts as a basic front end for the Songsterr guitar tab service. We're not affiliated with Songsterr;
+        we're only using the free API that they've generously made available.
+      </p>
+
+      <p>
+        <a href="https://www.songsterr.com/a/wa/api">Songsterr API Reference</a>
+      </p>
+
+      <h2>
+        Guitar Tabs
+      </h2>
+
+      <p>
+        Select a song, using the following form, to access its guitar tab!
+      </p>
+
+      <form action="http://www.songsterr.com/a/wa/song" method="GET" target="_blank">
+        <fieldset>
+          <legend>Choose a Song:</legend>
+          <div class="songSelection">
+            <label for="songID">Type a song ID number:</label><br>
+            <input id="songID" type="number" min="1" name="id" placeholder="song ID number" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tell Us About Yourself</legend>
+          <div class="userInfo">
+            <div class="field">
+              <label for="instrumentOne">Which Instrument do You Play?</label><br>
+              <input id="instrumentOne" type="text" placeholder="instrument" required>
+            </div>
+            <div class="field">
+              <label for="genreOne">Which Genre of Music Do You Play?</label>
+              <input id="genreOne" type="text" placeholder="genre" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <button>Submit</button>
+      </form>
+
+      <form action="http://www.songsterr.com/a/wa/song" method="GET" target="_blank">
+        <fieldset>
+          <legend>Choose a Song:</legend>
+          <div class="songSelection">
+            <select name="id" required>
+              <option value="" selected disabled hidden>Select an Option</option>
+              <option value="31673">Hero, By Enrique Iglesias</option>
+              <option value="456807">Cradles, By Sub Urban</option>
+              <option value="439261">In The Name Of Love, By Martin Garix</option>
+              <option value="466963">I Took A Pill In Ibiza, By Charles-Olivier Blais</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tell Us About Yourself</legend>
+          <div class="userInfo">
+            <div class="field">
+              <label for="instrumentTwo">Which Instrument do You Play?</label><br>
+              <input id="instrumentTwo" type="text" placeholder="instrument" required>
+            </div>
+            <div class="field">
+              <label for="genreTwo">Which Genre of Music Do You Play?</label>
+              <input id="genreTwo" type="text" placeholder="genre" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <button>Submit</button>
+      </form>
+
+      <form action="http://www.songsterr.com/a/wa/song" method="GET" target="_blank">
+        <fieldset>
+          <legend>Choose a Song:</legend>
+          <div class="songSelection">
+            <div class="songOption">
+              <label for="songOne">Hero, By Enrique Iglesias</label><br>
+              <input id="songOne" name="id" type="radio" value="31673"><br>
+            </div>
+            <div class="songOption">
+              <label for="songTwo">Cradles, By Sub Urban</label><br>
+              <input id="songTwo" name="id" type="radio" value="456807"><br>
+            </div>
+            <div class="songOption">
+              <label for="songThree">In The Name Of Love, By Martin Garix</label><br>
+              <input id="songThree" name="id" type="radio" value="439261"><br>
+            </div>
+            <div class="songOption">
+              <label for="songFour">I Took A Pill In Ibiza, By Charles-Olivier Blais</label><br>
+              <input id="songFour" name="id" type="radio" value="466963">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tell Us About Yourself</legend>
+          <div class="userInfo">
+            <div class="field">
+              <label for="instrumentThree">Which Instrument do You Play?</label><br>
+              <input id="instrumentThree" type="text" placeholder="instrument" required>
+            </div>
+            <div class="field">
+              <label for="genreThree">Which Genre of Music Do You Play?</label>
+              <input id="genreThree" type="text" placeholder="genre" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <button>Submit</button>
+      </form>
+
+    </main>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <h2>
+        References
+      </h2>
+
+      <ul>
+        <li><a href="https://www.songsterr.com/">Songsterr Guitar Tabs</a></li>
+        <li><a href="https://www.songsterr.com/a/wa/api">Songsterr API</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

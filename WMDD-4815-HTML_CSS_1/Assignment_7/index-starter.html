@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A7</title>
+
+    <link rel="stylesheet" href="style-starter.css">
+    <link rel="icon" type="image/png" href="icon.png" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Assignment 7: Position Property & Tables</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#position">Position</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2 id="position">Position Property</h2>
+
+            <p>The position property is used to change the position of an element to something other than its default.
+            </p>
+
+            <p>Beware: The position property should be used to achieve special effects and should not be used to create
+                a grid layout or fix a broken layout.</p>
+
+            <p>Below is a summary of position values we will discuss in this class. </p>
+
+
+            <!-- testing my code before submitting  -->
+
+                
+
+
+
+
+
+
+            <!-- Table starts here -->
+
+            <!-- <table>
+                <thead>
+                    <tr>
+                      <th id="purchase">Purchase</th>
+                      <th id="location">Location</th>
+                      <th id="date">Date</th>
+                      <th id="evaluation">Evaluation</th>
+                      <th id="cost">Cost (€)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <th id="haircut">Haircut</th>
+                    <td headers="location haircut">Hairdresser</td>
+                    <td headers="date haircut">12/09</td>
+                    <td headers="evaluation haircut">Great idea</td>
+                    <td headers="cost haircut">30</td>
+                  </tr>
+                  
+                             
+                  </tbody>
+            </table> -->
+            <div class="table_wrapper">
+                <table>
+                    <caption>Position Property Values</caption>
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Use</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">relative</th>
+                            <td>Position an element relative to its normal position</td>
+                            <td>Use the CSS properties top, bottom, left, and right to adjust the position.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">absolute</th>
+                            <td>Position an element relative to its nearest positioned parent.</td>
+                            <td>Use the CSS properties top, bottom, left, and right to adjust the position with respect
+                                to
+                                the
+                                parent. By "nearest positioned parent" what we mean is the ancestor element nearest in
+                                the
+                                hierarchy that has some position property set. (Usually just position:relative).</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">fixed</th>
+                            <td>Position an element relative to the viewport.
+                            </td>
+                            <td>Use the CSS properties top, bottom, left, and right to adjust the position with respect
+                                to
+                                the
+                                viewport.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">sticky</th>
+                            <td>Position an element relative to the viewport when scrolling.
+                            </td>
+                            <td>Used to create a "sticky" element that stays in its normal place until you scroll by.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <section>
+                <h3>Position Property Examples </h3>
+
+                <section>
+                    <h4>Relative</h4>
+
+                    <div id="relative-example">
+                        <img src="andre-gaulin-0CqzpiPil4g-unsplash.jpg" alt="laneway">
+                        <div>
+                            <h5>It's Easy to Make Things Overlap</h5>
+
+                            <p>Use the position:relative property, along with top, bottom, left and right to overlap
+                                elements. You may also need to use the z-index property to control the overlap order.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>Absolute</h4>
+
+                    <div id="absolute-example">
+                        <img src="andre-gaulin-dxql_qtDLgk-unsplash.jpg" alt="laneway">
+
+                        <div>
+                            <h5>Complete Overlap is Possible</h5>
+                            <p>With this property, any HTML element can become a background.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section>
+            <h2 id="tables">Tables</h2>
+
+            <p>Tables are used to display tabular data; that is to say, data that is most easily understood in a table
+                format. They should <em>not</em> be used to create grid layouts, since that violates the separation of
+                style and content.</p>
+
+            <p>Ironically, you can find an example of a table in the above "Position" section.</p>
+        </section>
+    </main>
+
+    <aside>
+        For more information, click <a href="#">here.</a>
+    </aside>
+
+</body>
+
+</html>

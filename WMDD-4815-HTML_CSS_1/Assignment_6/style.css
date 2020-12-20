@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600&family=Kanit&family=Righteous&display=swap');
+
+html {
+  font-family: sans-serif;
+  line-height:1.5;
+}
+
+body {
+    background-color:oldlace;
+    margin:0;
+}
+
+.wrapper{
+  padding:.25rem;
+}
+
+h1, h2 {
+  font-family: "Righteous", sans-serif;
+}
+
+h1 {
+  font-size:3rem;
+  color:mediumvioletred;
+
+  text-shadow: .07em .07em 0 oldlace, .14em .14em 0 palevioletred;
+}
+
+header {
+  background-color:white;
+  box-shadow: 0 0px 6px moccasin;
+}
+
+footer {
+  background-color:mediumvioletred;
+  width:100%;
+  margin-top: 1rem;
+}
+
+footer a, footer {
+  color: white;
+}
+
+
+/* Sumeet's code for small screens */
+* {
+  box-sizing: border-box;
+}
+
+legend {
+  color: mediumvioletred;
+  font-weight: bold;
+}
+
+fieldset {
+  border: 1px dotted mediumvioletred;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: rgb(252, 221, 165);
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 0 1rem 1rem;
+}
+
+form {
+  background-color: white;
+  margin-top: 1rem;
+}
+
+input, select {
+  border: 2px solid rgb(252, 221, 165);
+  font-size: 1rem;
+  height: 2rem;
+}
+
+input[type="text"], input[type="number"], select {
+  width: 100%;
+}
+
+.field {
+  width: 100%;
+}
+
+input:focus, select:focus, a:focus {
+  border-color: mediumvioletred;
+  outline: mediumvioletred 3px solid;
+}
+
+button:focus {
+  background-color: palevioletred;
+}
+
+button:hover {
+  background-color: palevioletred;
+}
+
+button:active {
+  background-color: steelblue;
+}
+
+p a {
+  color: mediumvioletred;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+p a:visited {
+  color: steelblue;
+}
+
+p a:active {
+  color: hotpink;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+header form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0.25rem;
+  justify-content: right;
+  
+}
+
+header form button {
+  padding: 0;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button i {
+  font-size: 1.25rem;
+}
+
+main form {
+  box-shadow: 1px 1px 2px rgba(255, 95, 202, 0.2);
+}
+
+/* Sumeet's code for Large screens */
+@media screen and (min-width: 700px) {
+  .userInfo, .songSelection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  header form {
+    margin-bottom: 1rem;
+  }
+
+  main form {
+    padding-top: 2rem;
+  }
+
+}

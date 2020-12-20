@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+html {
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+h1,h2,h3, h4 {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    margin:0;
+}
+
+header, nav, main {
+    padding:.5rem;
+}
+
+header {
+    padding-top:4em;
+    background-image: url("andre-gaulin-RowBKQLxYDI-unsplash.jpg");
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+nav ul,main,header h1{
+    max-width:800px;
+    margin:auto;
+}
+
+h1 {
+    background-color: rgba(0,0,0,.7);
+    color:lightgoldenrodyellow;
+    font-weight: 300;
+    padding:.5rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+h2, h3, caption {
+    color:brown;
+}
+
+a {
+    text-decoration: none;
+    color:darkblue;
+}
+
+nav {
+    background-color: aliceblue;
+    border-bottom:1px solid rgba(0,0,60,.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding:0;
+}
+
+img {
+    width:100%;
+}
+
+#relative-example div {
+    background-color: aliceblue;
+    padding:.5rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,.3) ;
+}
+
+#absolute-example div {
+    color:white;
+    background-color: rgba(0,0,0,.8);
+    padding:.5rem;
+
+}
+
+aside {
+    background-color: aliceblue;
+    padding:1rem;
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+    border-radius:5px 0 0 0;
+}
+
+h4 {
+    border-bottom: 1px solid rgba(0,0,60,.3);
+    margin-top:2rem;
+}
+
+
+/* -- Sumeet Code for mobile screen start -- */
+
+.table_wrapper {
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    overflow-x: auto;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+}
+
+table {
+    width: 784px;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+th {
+    color: darkblue;
+    background-color: aliceblue;
+}
+
+.table_wrapper, th, td {
+    padding: 0.5rem;
+}
+thead th {
+    color: white;
+    background-color: darkblue;
+}
+
+aside {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* -- Sumeet code for mobile screen end -- */
+
+
+@media screen and (min-width:800px) {
+
+    header {
+        font-size: 2rem;
+        padding-top:7em;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right:1rem;
+    }
+
+    #relative-example {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:.5rem;
+
+        /* Note: this ensures that elements are vertically centered within their grid cells */
+        align-items:center;
+    }
+
+    #absolute-example div {
+        background-color: rgba(0,0,0,.6);
+    }
+
+    /* -- Sumeet Code for large screens start -- */    
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    
+    #relative-example div {
+        position: relative;
+        left: -2rem;
+    }
+
+    #absolute-example {
+        position: relative;
+    }
+
+    #absolute-example div {
+        position: absolute;
+        bottom: 1rem;
+    }
+
+    /* -- Sumeet Code for large screens end -- */
+}
