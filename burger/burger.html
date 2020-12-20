@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Tech Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+<style>
+
+.burger_content_box {
+    height: 500px;
+    width: 500px;
+}
+
+.burger_top_bun {
+    background-image: linear-gradient(#cd7f32, #f4a460);
+    height: 80px;
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    animation: b_top 3s;
+    /* animation-delay: 5s; */
+}
+
+.burger_top_sessme_seed {
+    background: lightgray;
+    height: 10px;
+    width: 40px;
+    position: relative;
+    border-radius: 100px / 50px;
+}
+
+.seed_one {
+    top: 35px;
+    left: 30px;
+    transform: rotate(45deg);
+}
+.seed_two {
+    top: 30px;
+    left: 110px;
+    transform: rotate(165deg);
+}
+.seed_three {
+    top: 1px;
+    left: 200px;
+    transform: rotate(50deg);
+}
+.seed_four {
+    top: 20px;
+    left: 300px;
+    transform: rotate(5deg);
+}
+.seed_five {
+    top: 1px;
+    left: 400px;
+    transform: rotate(100deg);
+}
+
+.burger_green_salad {
+    background-image: linear-gradient(green,lightgreen);
+    height: 30px;
+    width: 105%;
+    position: relative;
+    animation: b_green 2.5s;
+    /* animation-delay: 4s; */
+}
+
+.burger_red_sauce {
+    background-color: red;
+    height: 10px;
+    width: 100%;
+    position: relative;
+    animation: b_red 2s;
+    /* animation-delay: 3s; */
+}
+
+.burger_yellow_cheese {
+    background-color: #ffd800;
+    height: 20px;
+    width: 110%;
+    position: relative;
+    animation: b_yellow 1.5s;
+    /* animation-delay: 2s; */
+}
+
+.burger_brown_meat {
+    background-color: brown;
+    height: 35px;
+    width: 100%;
+    position: relative;
+    animation: b_brown 1s;
+    /* animation-delay: 1s; */
+}
+
+.burger_bottom_bun {
+    background-color: #f4a460;
+    height: 50px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    animation: b_bottom 0.5s;
+}
+
+
+/* Animation */
+
+@keyframes b_bottom {
+    0%   {top: -500px;}
+    100% {top: 0px;}
+}
+@keyframes b_brown {
+    0%   {top: -500px;}
+    50%  {top: -500px;}
+    100% {top: 0px;}
+}
+@keyframes b_yellow {
+    0%   {top: -500px;}
+    66%  {top: -500px;}
+    100% {top: 0px;}
+}
+@keyframes b_red {
+    0%   {top: -500px;}
+    75%  {top: -500px;}
+    100% {top: 0px;}
+}
+@keyframes b_green {
+    0%   {top: -500px;}
+    80%  {top: -500px;}
+    100% {top: 0px;}
+}
+@keyframes b_top {
+    0%   {top: -500px;}
+    84%  {top: -500px;}
+    100% {top: 0px;}
+}
+
+</style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <div class="burger_block">
+        <div class="burger_content_box d-flex flex-column justify-content-center align-items-center mx-auto px-3">
+            <div class="burger_top_bun mt-3">
+                <div class="burger_top_sessme_seed seed_one"></div>
+                <div class="burger_top_sessme_seed seed_two"></div>
+                <div class="burger_top_sessme_seed seed_three"></div>
+                <div class="burger_top_sessme_seed seed_four"></div>
+                <div class="burger_top_sessme_seed seed_five"></div>
+            </div>
+            <div class="burger_green_salad rounded-pill mt-3"></div>
+            <div class="burger_red_sauce mt-3"></div>
+            <div class="burger_yellow_cheese rounded-lg mt-3"></div>
+            <div class="burger_brown_meat rounded-lg mt-3"></div>
+            <div class="burger_bottom_bun mt-3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
